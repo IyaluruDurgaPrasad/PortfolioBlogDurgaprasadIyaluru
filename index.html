@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- overlay when open webpage -->
+    <div id="overlay" class="overlay">
+        <div class="message">Welcome To <br> Iyaluru Durga Prasad <br>Web Blog</div>
+    </div>
+
+    <!-- navbar -->
+    <div class="container-nav">
+        <nav>
+            <p class="logo"><img class="logo1" src="logo1.png" alt="" height="70px" width="70px" style="position: sticky;"></p>
+            <ul id="sidemenu">
+                <li onclick="closemenu()"><a href="" class="navActive">Home</a></li>
+                <li onclick="closemenu()"><a href="#about">About</a></li>
+                <li onclick="closemenu()"><a href="#services">Services</a></li>
+                <li onclick="closemenu()"><a href="#myportfolio">Portfolio</a></li>
+
+                <li onclick="closemenu()"><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <!--  Header-->
+    <div class="container">
+        <div id="header">
+            <div class="header-text">
+                <p>UI|UX Designer</p>
+                <p>Python Developer</p>
+                <h1>Hi, I'm <span>Durga Prasad</span></h1>
+                <h2>From Andhra Pradesh India</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title aboutme">About Me</h1>
+                    <img id="about-col-1" src="pic.jpeg" alt="" width="300" height="400">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title aboutme1">About Me</h1>
+                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello, <span class="myname">" I’m Durgaprasad "</span>, BSc Computer Science student with a strong passion for technology and problem-solving. As I work towards completing my degree, I am honing my skills in software development, programming.
+
+                        Throughout my studies, I have developed a solid foundation in various technologies, including <span class="myskills">" Python, Django, MySQL, HTML, CSS, Boostrap, jQuery, Reactjs "</span>. 
+                        I enjoy tackling complex problems and creating innovative solutions that can have a real-world impact.
+                        
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This portfolio showcases some of the projects I’ve worked on apps, websites, software programs. I am always eager to learn and take on new challenges, and I look forward to collaborating with professionals and gaining hands-on experience in the field.
+                        
+                        Thank you for visiting, and I’m excited to connect with like-minded individuals and professionals in the tech community.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Web Application Interface</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Ramana Soft, Hyderabad, India</span><br>Python Full Stack Developer <br> (Jan 2024 - March 2024)</li>
+                            <li><span>XYUG Technologies, Hyderabad, India</span><br>Python Developer<br> (May 2024 - Aug 2024)</li>
+                            <!-- <li><span>App Development</span><br>Building Android Apps</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SSC, Panyam Cements High School.</span><br> Cement Nagar (AP), India. <br>CGPA 8.00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  March 2018</li>
+                            <li><span>Intermediate, Rao's Junior College.</span><br> Nandyal (AP), India. <br>CGPA 8.80 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  March 2020</li>
+                            <li><span>BSC Degree, National Degree College.</span><br> Nandyal (AP), India. <br>CGPA 8.69 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  July 2023</li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the art of creating visually appealing and user-friendly websites. It combines elements of graphic design, user experience (UX), and front-end development to create websites that are not only functional but also engaging. A good web design ensures intuitive navigation, responsive layouts, and a seamless experience across devices. As a web designer, I focus on creating clean, aesthetically pleasing, and responsive websites that enhance user interaction and meet both business and user needs.
+
+                    </p>
+                    <a href=""></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI (User Interface) and UX (User Experience) design are crucial aspects of creating intuitive, engaging, and effective digital products. UI design focuses on the visual elements, such as layout, buttons, colors, and typography, ensuring that the interface is visually appealing and easy to navigate. UX design, on the other hand, is centered around the overall experience a user has with a product, focusing on usability, functionality, and ensuring the design meets the user's needs and expectations. Together, UI/UX design aims to create a seamless, enjoyable experience for users, increasing satisfaction and interaction with digital platforms.</p>
+                    <!-- <a href="">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App design involves creating intuitive, visually appealing, and user-friendly mobile applications. It combines UI (User Interface) and UX (User Experience) design principles to ensure the app is not only aesthetically pleasing but also easy to navigate and functional. A well-designed app focuses on performance, usability, and consistency, ensuring that users have a seamless and engaging experience across different devices and platforms. Effective app design requires a deep understanding of user needs and behavior, translating those insights into a smooth, enjoyable experience.</p>
+                    <!-- <a href="">learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="myportfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="portfolio-list">
+                
+                <div class="portfolio">
+                    <img src="movie.jpg" alt="">
+                    <div class="layer">
+                        <h3>Movie Booking Website</h3>
+                        <p>
+                            
+                            A user-friendly platform to easily browse, select, and book tickets for events, travel, and entertainment.</p>
+                        <a href="https://iyalurudurgaprasad.github.io/moviejoy/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="ecommerce.jpg" alt="">
+                    <div class="layer">
+                        <h3>E-Commerce Cart Website</h3>
+                        <p>
+             
+                            A seamless shopping experience offering a variety of products, secure payments, and fast delivery options.</p>
+                        <a href=" "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="quiz1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Quiz Website</h3>
+                        <p>A quiz app is a great way to engage users while testing their knowledge on various topics.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact me -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>iyalurudurgaprasad@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91-9347067010</p>
+                    <div class="socail-icons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="Python_Full_Stack_Resume (2).pdf" download class="btn btn2">Download My Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" action="#header">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="" placeholder="Your Email Id" required>
+                        <input type="text" name="Phone" placeholder="Your Phone Number">
+                    
+                        
+                        <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <!-- <textarea name="For" id="" cols="30" rows="10" placeholder="Message"></textarea> -->
+                        <input type="submit" class='btn' value="Submit">
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Made By Durgaprasad</p>
+        </div>
+     </div>
+
+<!--  javascript for about me active links-->
+    <script>
+        var tablinks=document.getElementsByClassName('active-link');
+        var tabcontents=document.getElementsByClassName('active-tab');
+
+        console.log(tablinks[0])
+        console.log(tabcontents)
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link')
+                console.log(tablink)
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add('active-link')
+            document.getElementById(tabname).classList.add('active-tab')
+        }
+    </script>
+
+<!-- javascript of side nav bar -->
+    <script>
+        var sidemenu=document.getElementById('sidemenu')
+        function openmenu(){
+            sidemenu.style.right='0'
+        }
+        function closemenu(){
+            sidemenu.style.right="-340px"
+        }
+    </script>
+
+<!-- google sheet -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxVQUIQlgJBiBeTK8264nFzJnaOkEEKIGOAVk7auiIcbxz3_u49RszFJetn-zOHQC07qg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    var msg=document.getElementById('msg')
+   
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+             msg.innerText='Message Send Successfully....'
+             setTimeout(()=>{
+                msg.innerText=''
+             },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+
+   
+  </script>
+
+<!-- javascript for overlay -->
+  <script>
+    window.onload = function() {
+    setTimeout(function() {
+        console.log('back go')
+        document.getElementById('overlay').classList.add('hidden');
+    }, 5000); 
+    };
+
+  </script>
+    
+</body>
+</html>
